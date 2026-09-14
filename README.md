@@ -2,6 +2,19 @@
 
 A Java Swing desktop application for maintaining meteor-impact records in a MySQL database. The interface supports viewing, adding, updating, and deleting records through prepared SQL statements.
 
+## Quick Start
+
+This project requires **Java 22**, **Maven**, and **MySQL**.
+
+1. Run `schema.sql` in MySQL.
+2. Download and extract the repository.
+3. Launch it:
+   - **Windows:** double-click `run.bat`
+   - **macOS/Linux:** run `chmod +x run.sh && ./run.sh`
+4. Enter your local MySQL password when prompted.
+
+The password is used only for that local run and is not saved in the repository.
+
 ## Features
 
 - View meteor records in a table
