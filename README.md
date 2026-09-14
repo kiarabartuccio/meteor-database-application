@@ -1,39 +1,33 @@
 # Meteor Database Application
 
-A Java Swing desktop application for managing meteor-impact records stored in MySQL. Users can add, view, update, and delete records through a graphical interface.
+A Java Swing desktop application for maintaining meteor-impact records in a MySQL database. The interface supports viewing, adding, updating, and deleting records through prepared SQL statements.
 
 ## Features
 
 - View meteor records in a table
-- Add new meteor-impact records
+- Add a new meteor record
 - Update individual record fields
 - Delete selected records
-- Prepared SQL statements for database operations
-- Dedicated Swing forms for each workflow
-- Database configuration through environment variables
+- Prepared statements for database operations
+- NetBeans Swing forms and Maven dependency management
 
 ## Technologies
 
 - Java 22
-- Java Swing
+- Swing
 - MySQL
 - JDBC
 - Maven
 
-## Database setup
+## Database Setup
 
-1. Create the database and table:
-
-```bash
-mysql -u root -p < database/schema.sql
-```
-
-2. Set the connection environment variables. The URL and username have local defaults, but the password must be supplied securely.
+1. Install MySQL and create a database named `MeteorDatabase`.
+2. Run `schema.sql` to create the `Meteor` table.
+3. Set your connection values as environment variables. Never commit a real database password.
 
 ### Windows PowerShell
 
 ```powershell
-$env:METEOR_DB_URL="jdbc:mysql://localhost:3306/MeteorDatabase?serverTimezone=UTC"
 $env:METEOR_DB_USER="root"
 $env:METEOR_DB_PASSWORD="your-password"
 ```
@@ -41,22 +35,25 @@ $env:METEOR_DB_PASSWORD="your-password"
 ### macOS or Linux
 
 ```bash
-export METEOR_DB_URL="jdbc:mysql://localhost:3306/MeteorDatabase?serverTimezone=UTC"
 export METEOR_DB_USER="root"
 export METEOR_DB_PASSWORD="your-password"
 ```
 
-## Run the application
+You may also set `METEOR_DB_URL` if MySQL is not using the default local URL.
+
+## Run the Project
+
+Open the Maven project in NetBeans, or run:
 
 ```bash
 mvn clean compile
-mvn exec:java -Dexec.mainClass="com.mycompany.sampleproject.SampleProject"
+mvn exec:java -Dexec.mainClass=com.mycompany.sampleproject.SampleProject
 ```
 
-## Learning outcomes
+## Security Improvement
 
-This project combines event-driven Java GUI development with relational database design, CRUD operations, JDBC connections, prepared statements, and secure configuration practices.
+Database credentials are loaded from environment variables instead of being stored in the Java source code.
 
-## Author
+## What I Practiced
 
-Kiara Bartuccio — Computer Technology student at Vanier College.
+This project helped me develop skills in CRUD operations, relational databases, JDBC, prepared statements, Swing event handling, and secure configuration practices.
