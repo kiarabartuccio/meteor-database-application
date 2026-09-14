@@ -2,6 +2,19 @@
 
 A Java Swing desktop application for maintaining meteor-impact records in a MySQL database. The interface supports viewing, adding, updating, and deleting records through prepared SQL statements.
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/main-menu.png" width="260" alt="Meteor Database main menu"><br><b>Main Menu</b></td>
+    <td align="center"><img src="docs/screenshots/add-meteor-form.png" width="520" alt="Add meteor record form"><br><b>Add Meteor Record</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/update-meteor-form.png" width="320" alt="Update meteor record form"><br><b>Update Meteor Record</b></td>
+    <td align="center"><img src="docs/screenshots/meteor-animation.png" width="420" alt="Meteor animation screen"><br><b>Meteor Animation</b></td>
+  </tr>
+</table>
+
 ## Quick Start
 HOW I RUN: SAVE ZIP FILE, UPLOAD TO NETBEANS
 
