@@ -3,6 +3,7 @@
 A Java Swing desktop application for maintaining meteor-impact records in a MySQL database. The interface supports viewing, adding, updating, and deleting records through prepared SQL statements.
 
 ## Quick Start
+HOW I RUN: SAVE ZIP FILE, UPLOAD TO NETBEANS
 
 This project requires **Java 22**, **Maven**, and **MySQL**.
 
